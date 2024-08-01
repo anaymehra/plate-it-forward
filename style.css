@@ -1,0 +1,487 @@
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family: FuturaLight;
+    src: url(./Futura\ Light\ font.ttf);
+}
+@font-face {
+    font-family: FuturaMedium;
+    src: url(./futura\ medium\ bt.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h1, section h2 {
+    color: #333;
+    font-family: Futura;
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-family: Futura;
+    line-height: 10vw;
+    /* letter-spacing: -6px; */
+    text-align: center;
+}
+#video-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: FuturaMedium;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border-color: #333;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.img-fit {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.logo-fit {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.logo-text {
+    margin-top: 5%;
+    font-family: FuturaMedium;
+    font-weight: 500;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional Section Styles */
+#mission, #impact-stories, #how-it-works, #events, #testimonials {
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.story, .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#events ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#events li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Links Page Styling */
+#links {
+    background: #f9f9f9; /* Light background for the section */
+    padding: 40px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align */
+}
+
+#links h2 {
+    color: #000; /* Black color for the heading */
+    font-family: FuturaMedium; /* Font family for consistency */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+#links p {
+    color: #333; /* Darker gray for text */
+    margin-bottom: 20px; /* Space below the paragraph */
+    font-family: FuturaLight; /* Font family for paragraph */
+    font-size: 1.25rem; /* Larger font size */
+    text-align: center; /* Center align the paragraph */
+}
+
+.list-group {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.list-group-item {
+    background: #fff; /* White background for list items */
+    padding: 20px; /* Increased padding inside each list item */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between list items */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-family: FuturaLight; /* Font family for list items */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.list-group-item a {
+    color: #e60012; /* Red color for links */
+    text-decoration: none; /* Remove underline */
+    font-family: FuturaMedium; /* Font family for links */
+    font-size: 1.2rem; /* Slightly larger font size for links */
+}
+
+.list-group-item a:hover {
+    color: #000; /* Black color for hover effect */
+    text-decoration: underline; /* Underline on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+}
+
+/* Volunteer page styles */
+#volunteer {
+    background: #fff; /* White background for the section */
+    padding: 40px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 900px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align */
+}
+
+#volunteer h2 {
+    color: #000; /* Black color for the heading */
+    font-family: Futura; /* Use Arial for the heading */
+    font-size: 2.4rem; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+#volunteer p {
+    color: #333; /* Darker gray for text */
+    margin-bottom: 20px; /* Space below the paragraph */
+    font-family: 'Arial', sans-serif; /* Use Arial for paragraphs */
+    font-size: 1.25rem; /* Larger font size */
+    text-align: center; /* Center align the paragraph */
+}
+
+.list-group-item {
+    background: #f2f2f2; /* Light gray background for list items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between list items */
+    padding: 15px; /* Padding inside list items */
+    font-family: 'Arial', sans-serif; /* Use Arial for list items */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.list-group-item h4 {
+    color: #000; /* Black color for sub-headings */
+    font-family: 'Arial', sans-serif; /* Use Arial for sub-headings */
+    text-align: center;
+}
+
+.form-label {
+    color: #333; /* Darker gray for form labels */
+    font-family: 'Arial', sans-serif; /* Use Arial for form labels */
+}
+
+.form-control {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below form fields */
+    font-family: 'Arial', sans-serif; /* Use Arial for form fields */
+}
+
+.btn-primary {
+    background-color: #fe0000; /* Red background for the button */
+    border-color: #fe0000; /* Red border for the button */
+    font-family: 'Arial', sans-serif; /* Use Arial for button text */
+}
+
+.btn-primary:hover {
+    background-color: #c70010; /* Darker red on hover */
+    border-color: #c70010; /* Darker red border on hover */
+}
+
+
+/* Statistics Page */
+#hunger-facts {
+    background: #fff; /* White background for the section */
+    padding: 40px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 900px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align */
+}
+
+#hunger-facts h2 {
+    color: #000; /* Black color for the heading */
+    font-family: Futura; /* Use Futura for the heading */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+#hunger-facts p {
+    color: #333; /* Darker gray for text */
+    font-family: FuturaLight; /* Use FuturaLight for paragraphs */
+    font-size: 1.25rem; /* Larger font size */
+    text-align: center; /* Center align the paragraph */
+}
+
+.list-group-item {
+    background: #f2f2f2; /* Light gray background for list items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between list items */
+    padding: 15px; /* Padding inside list items */
+    font-family: FuturaLight; /* Use FuturaLight for list items */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+#hunger-facts {
+    background: #f5f5f5; /* Light gray background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #hunger-facts h2 {
+    color: #333; /* Dark gray for the heading */
+    font-family: 'Georgia', serif; /* Use Georgia for a classic look */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #hunger-facts h3 {
+    color: #fe0000; /* Red color for subheadings */
+    font-family: 'Arial Black', sans-serif; /* Bold font for emphasis */
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #hunger-facts p {
+    color: #555; /* Slightly lighter gray for text */
+    font-family: 'Verdana', sans-serif; /* Use Verdana for clarity */
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .list-group-item {
+    background: #fff; /* White background for list items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-family: 'Verdana', sans-serif; /* Use Verdana for list items */
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    background-color: #fe0000; /* Red color for buttons */
+    border: none;
+    font-family: 'Arial Black', sans-serif; /* Bold font for buttons */
+    font-size: 1.2rem;
+  }
+
+  .btn-primary:hover {
+    background-color: #fe0000; /* Darker red on hover */
+  }
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #home h1 {
+        font-size: 6vw;
+        line-height: 8vw; /* Adjusted line-height */
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .logo-text {
+        margin-top: 2%;
+        font-family: FuturaMedium;
+        font-weight: 500;
+    }
+    #cta-button {
+        padding: 12px 25px;
+        font-size: 1.2rem;
+    }
+    
+    .img-fit {
+        height: 250px;
+    }
+
+    .logo-fit {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #home h1 {
+        font-size: 5vw;
+        line-height: 6vw; /* Adjusted line-height */
+    }
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 4.5vw;
+        line-height: 5.5vw; /* Adjusted line-height */
+    }
+    .logo-text {
+        margin-top: 2%;
+        font-family: FuturaMedium;
+        font-weight: 500;
+    }
+    .img-fit {
+        height: 200px;
+    }
+
+    .logo-fit {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 4vw;
+        line-height: 5vw; /* Adjusted line-height */
+    }
+    .logo-text {
+        margin-top: 2%;
+        font-family: FuturaMedium;
+        font-weight: 500;
+    }
+    #cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .img-fit {
+        height: 150px;
+    }
+
+    .logo-fit {
+        width: 25px;
+        height: 25px;
+    }
+
+    #links h2,
+    #volunteer h2,
+    #hunger-facts h2 {
+        font-size: 2rem;
+    }
+
+    #links p,
+    #volunteer p,
+    #hunger-facts p {
+        font-size: 1rem;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+    }
+}
+
+.navbar-toggler {
+    margin-left: 20px; /* Adjust the value as needed */
+}
